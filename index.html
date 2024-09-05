@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegaBattel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>VegaBattel Form</h2>
+    <form action="/submit-form" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" required>
+
+        <label for="current-year">Current Year:</label>
+        <input type="number" id="current-year" name="current-year" min="1" max="6" required>
+
+        <label for="passing-year">Year of Passing Out:</label>
+        <input type="number" id="passing-year" name="passing-year" min="1900" max="2100" required>
+
+        <label for="profile-picture">Profile Picture:</label>
+        <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+
+        <label for="fav-language">Favourite Language:</label>
+        <select id="fav-language" name="fav-language" required>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="Ruby">Ruby</option>
+            <option value="PHP">PHP</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
